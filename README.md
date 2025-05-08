@@ -10,6 +10,14 @@ Este portfólio foi desenvolvido com o objetivo de centralizar informações imp
 
 ---
 
+## 🧑‍💻 Sobre Mim
+
+Olá! Meu nome é Gabriel, e sou um desenvolvedor web iniciante. Adoro transformar ideias em soluções digitais criativas e funcionais. Tenho experiência em HTML, CSS e Python, e estou sempre em busca de aprender novas tecnologias para aprimorar minhas habilidades.
+
+Quando não estou codando, você pode me encontrar explorando novas ferramentas, lendo sobre design ou jogando videogames. Acredito que a tecnologia tem o poder de mudar o mundo, e estou animado para fazer parte dessa transformação.
+
+---
+
 ## 🎯 Objetivos Principais
 
 - Facilitar a visualização das minhas experiências e projetos.
