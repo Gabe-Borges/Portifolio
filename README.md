@@ -40,4 +40,4 @@ Quando não estou codando, você pode me encontrar explorando novas ferramentas,
 
 ---
 
-Sinta-se à vontade para explorar e conhecer mais sobre mim e meu trabalho. 🚀
+Sinta-se à vontade para explorar e conhecer mais sobre mim e meu trabalho.
