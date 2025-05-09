@@ -9,17 +9,17 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0 auto;
 }
 
 header {
-    width: 100%;
-  height: 100%;
+  width: 100%;
   font-family: "Jost", sans-serif;
-  margin: -8px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   background-color: #1E1E1E;
   color: white;
 }
@@ -51,10 +51,8 @@ header {
 .frontpage {
   justify-content: center;
   display: flex;
-  padding-top: 200px;
-  padding-bottom: 250px;
-  margin-top: -30px;
-}
+  padding-top: 26vh;
+  padding-bottom: 26vh;}
 
 .frontpage h1 {
   font-size: 30px;
@@ -77,15 +75,13 @@ header {
 }
 
 body {
-    width: 100%;
-  height: 100%;
+  margin: 0 auto;
   background-color: #313131;
   background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px;
   color: light-dark(black, white);
   background-color: light-dark(#efedea, #1e1e1e);
-  ;
   font-family: "Jost", sans-serif;
   align-items: center;
   justify-content: center;
@@ -103,6 +99,13 @@ body h2 {
   color: white;
 }
 
+.sections{
+  margin: 0 auto;
+  width: 80%;
+  height: 50%;
+  justify-content: center;
+
+}
 
 .about {
   font-family: "Jost", sans-serif;
@@ -167,7 +170,9 @@ section {
 
 footer {
   grid-column: 2;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+  padding-top: 60px;
+  margin: 0%;
   font-family: "Jost", sans-serif;
   text-align: center;
   display: grid;
