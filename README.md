@@ -30,6 +30,7 @@ Quando não estou codando, você pode me encontrar explorando novas ferramentas,
 
 - **HTML5**: Estrutura semântica e moderna para a web.
 - **CSS3**: Estilização e design responsivo.
+- **JavaScript**: Interatividade da página
 
 ---
 

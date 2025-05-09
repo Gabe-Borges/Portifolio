@@ -3,7 +3,22 @@
   font-optical-sizing: auto;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 header {
+    width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
   font-family: "Jost", sans-serif;
   margin: -8px;
   display: flex;
@@ -38,15 +53,41 @@ header {
   color: #007BFF;
 }
 
-:root {
-  color-scheme: light dark;
+.frontpage {
+  justify-content: center;
+  display: flex;
+  padding-top: 200px;
+  padding-bottom: 250px;
+  margin-top: -30px;
 }
 
-html {
-  scroll-behavior: smooth;
+.frontpage h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.info {
+  padding-left: 10%;
+  padding-right: 10%;
+  flex: 50%;
+  text-align: left;
+}
+
+.photo {
+  flex: 50%;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  align-items: right;
 }
 
 body {
+    width: 100%;
+  height: 100%;
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
   color: light-dark(black, white);
   background-color: light-dark(#efedea, #1e1e1e);
   ;
@@ -62,73 +103,20 @@ body h2 {
   color: cyan
 }
 
-section {
-  padding: 100px 0;
-}
-
-footer {
-  grid-column: 2;
-  padding-bottom: 60px;
-  font-family: "Jost", sans-serif;
-  text-align: center;
-  display: grid;
-  background-color: #1E1E1E;
-  color: white;
-}
-.footer_info {
-  padding: 20px;
-}
-
-.footer_social {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  gap: 30px;
-}
-
 .dark.mode {
   background-color: #1e1e1e;
   color: white;
 }
 
-.frontpage {
-  display: flex;
-  padding-top: 200px;
-  padding-bottom: 240px;
-  margin-top: -30px;
-}
-
-.frontpage h1 {
-  font-size: 30px;
-  color: white;
-}
-
-.frontpage p {
-  font-size: 20px;
-  color: white;
-  margin-top: -20px;
-}
-
-.info {
-  padding-left: 200px;
-  padding-right: 300px;
-  padding-bottom: 100px;
-  text-align: left;
-}
-
-
-.photo {
-  text-align: right;
-  align-items: right;
-}
 
 .about {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
-
 
 .projects {
   padding-left: 100px;
@@ -136,7 +124,6 @@ footer {
   padding-bottom: 100px;
   text-align: center;
 }
-
 
 .sama {
   text-align: center;
@@ -169,12 +156,38 @@ footer {
 
 }
 
-.currículo {
+.curriculo {
+  justify-content: center;
   padding-top: 0px;
   padding-left: 100px;
   padding-right: 100px;
   padding-bottom: 100px;
   text-align: center;
+}
+
+
+section {
+  padding: 100px 0;
+}
+
+footer {
+  grid-column: 2;
+  padding-bottom: 60px;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  display: grid;
+  background-color: #1E1E1E;
+  color: white;
+}
+.footer_info {
+  padding: 20px;
+}
+
+.footer_social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
 }
 
 /* Botão */
@@ -365,4 +378,76 @@ ul {
 .example-2 .icon-content a[data-social="youtube"] .filled,
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
+}
+
+/*botão de dowload*/
+
+.download-button {
+  position: relative;
+  border-width: 0;
+  color: rgb(19, 19, 19);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.download-button .docs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 4px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: solid 1px #e8e8e82d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.download-button:hover {
+  box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 0px 0px 4px 4px;
+  transform: translateY(0%);
+  background-color: #01e056;
+  border: solid 1px #01e0572d;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+}
+
+.download-button:hover .download {
+  transform: translateY(100%);
+}
+
+.download svg polyline,
+.download svg line {
+  animation: docs 1s infinite;
+}
+
+@keyframes docs {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(-15%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
