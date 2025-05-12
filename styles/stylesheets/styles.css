@@ -9,35 +9,39 @@
 
 html {
   scroll-behavior: smooth;
-  margin: 0 auto;
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
-  width: 100%;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: gray;
+  position: fixed;
   font-family: "Jost", sans-serif;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 20px;
+  align-self: center;
+  margin-top: 10px;
+  padding: 2vh;
   background-color: #1E1E1E;
   color: white;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  padding-left: 35px;
+  box-sizing: border-box;
 }
 
 .header-right ul {
   font-family: "Jost", sans-serif;
   list-style: none;
   margin: 0;
-  padding-right: 70px;
+  padding: 0;
   display: flex;
   gap: 35px;
+  text-align: center;
 }
 
 .header-right a {
@@ -46,38 +50,38 @@ header {
 }
 
 .header-right a:hover {
+  text-align: center;
   color: #007BFF;
 }
 
 .frontpage {
   justify-content: center;
   display: flex;
-  padding-top: 26vh;
-  padding-bottom: 26vh;}
+  padding-bottom: 45vh;
+  padding-top: 30vh;
+  padding-left: 30vh;
+  padding-right: vh;
+}
 
 .frontpage h1 {
-  font-size: 30px;
+  font-size: 28px;
   color: white;
 }
 
 .info {
-  padding-left: 10%;
-  padding-right: 10%;
-  flex: 50%;
   text-align: left;
-  align-items: center;
 }
 
 .photo {
-  flex: 50%;
-  padding-left: 10%;
-  padding-right: 10%;
+  display: flex;
+  flex: 10%;
+  justify-content: center;
   text-align: center;
-  align-items: right;
+  align-items: center;
+
 }
 
 body {
-  margin: 0 auto;
   background-color: #313131;
   background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
   background-size: 30px 30px;
@@ -85,16 +89,33 @@ body {
   color: light-dark(black, white);
   background-color: light-dark(#efedea, #1e1e1e);
   font-family: "Jost", sans-serif;
-  align-items: center;
-  justify-content: center;
   scroll-behavior: smooth;
   font-size: 2vh;
+  height: 100vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body h1 {
+  font-size: 5.5vh;
+  text-align: center;
+  color: greenyellow;
 }
 
 body h2 {
-  font-size: 5vh;
+  font-size: 4vh;
   text-align: center;
-  color: cyan
+}
+
+section{
+  margin-top: -10vh;
+  text-align: center;
+}
+
+section h2 {
 }
 
 .dark.mode {
@@ -102,17 +123,8 @@ body h2 {
   color: white;
 }
 
-.sections{
-  margin: 0 auto;
-  width: 80%;
-  height: 50%;
-  justify-content: center;
-
-}
-
-.about {
+.sobremim {
   font-family: "Jost", sans-serif;
-  padding: auto;
   text-align: center;
 }
 
@@ -123,6 +135,13 @@ body h2 {
 
 .sama {
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.sama img {
+  width: 50%;
+  height: 40%;
 }
 
 .skills {
@@ -158,22 +177,29 @@ body h2 {
 
 section {
   padding-left: 5vh;
-  padding-right: 10vh;
+  padding-right: 5vh;
   padding-top: 5vh;
   padding-bottom: 10vh;
 }
 
 footer {
-  grid-column: 2;
-  padding-bottom: 80px;
-  padding-top: 60px;
-  margin: 0%;
-  font-family: "Jost", sans-serif;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+  bottom: 0;
+  margin: 0;
+  width: 200vh;
+  position: relative;
+  left: 0;
+  align-self: center;
   text-align: center;
-  display: grid;
-  background-color: #1E1E1E;
-  color: white;
+  background-color: #161616;
 }
+
+footer h2 {
+  font-size: 4vh;
+  color: greenyellow;
+}
+
 .footer_info {
   padding: 20px;
 }
@@ -276,9 +302,7 @@ footer {
 
 /* Fim do botão */
 
-/* Decorações do Footer */
-
-/* From Uiverse.io by wilsondesouza */ 
+/* Icones de Redes sociais */
 ul {
   list-style: none;
 }
@@ -288,10 +312,12 @@ ul {
   justify-content: center;
   align-items: center;
 }
+
 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 .example-2 .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -305,11 +331,13 @@ ul {
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 .example-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: -50px;
 }
+
 .example-2 .icon-content a {
   position: relative;
   overflow: hidden;
@@ -323,18 +351,22 @@ ul {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
 }
+
 .example-2 .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
+
 .example-2 .icon-content a:hover {
   color: white;
 }
+
 .example-2 .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -345,104 +377,149 @@ ul {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 .example-2 .icon-content a:hover .filled {
   height: 100%;
 }
 
 .example-2 .icon-content a[data-social="linkedin"] .filled,
-.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
   background-color: #0274b3;
 }
 
 .example-2 .icon-content a[data-social="github"] .filled,
-.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+.example-2 .icon-content a[data-social="github"]~.tooltip {
   background-color: #24262a;
 }
+
 .example-2 .icon-content a[data-social="instagram"] .filled,
-.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
-  background: linear-gradient(
-    45deg,
-    #405de6,
-    #5b51db,
-    #b33ab4,
-    #c135b4,
-    #e1306c,
-    #fd1f1f
-  );
+.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+  background: linear-gradient(45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f);
 }
+
 .example-2 .icon-content a[data-social="youtube"] .filled,
-.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+.example-2 .icon-content a[data-social="youtube"]~.tooltip {
   background-color: #ff0000;
 }
 
-/*botão de dowload*/
+/* Fim dos icones de redes sociais */
 
-.download-button {
-  position: relative;
-  border-width: 0;
-  color: rgb(19, 19, 19);
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 4px;
-  z-index: 1;
+/* Card */
+.card-client {
+  background: #555;
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 10px #212121;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
 
-.download-button .docs {
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #fff;
+  border-radius: 999px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  min-height: 40px;
-  padding: 0 10px;
-  border-radius: 4px;
-  z-index: 1;
-  background-color: #ffffff;
-  border: solid 1px #e8e8e82d;
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.download-button:hover {
-  box-shadow: rgba(233, 233, 233, 0.555) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.download {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 90%;
-  margin: 0 auto;
-  z-index: -1;
-  border-radius: 0px 0px 4px 4px;
-  transform: translateY(0%);
-  background-color: #01e056;
-  border: solid 1px #01e0572d;
-  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
-  cursor: pointer;
+  align-items: center;
+  margin: auto;
 }
 
-.download-button:hover .download {
-  transform: translateY(100%);
+.user-picture svg {
+  width: 2.5rem;
+  fill: currentColor;
 }
 
-.download svg polyline,
-.download svg line {
-  animation: docs 1s infinite;
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-@keyframes docs {
-  0% {
-    transform: translateY(0%);
-  }
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
 
-  50% {
-    transform: translateY(-15%);
-  }
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #fff;
+}
 
-  100% {
-    transform: translateY(0%);
-  }
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
 }

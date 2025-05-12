@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <script src="./script/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio de Gabriel</title>
@@ -15,33 +16,30 @@
 
 
 <header>
-  <div class="logo">
-    <h1>Portifólio</h1>
-  </div>
-  </div>
-
   <div class="header-right">
     <nav>
       <ul>
         <a href="#sobremim">Sobre Mim</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#skills">Skills</a>
         <a href="#curriculo">Currículo</a>
+        <a href="#projetos">Projetos</a>
         <a href="https://github.com/Gabe-Borges">Github</a>
         <a
           href="https://www.linkedin.com/in/gabriel-borges-de-toledo-b922a433b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a>
+        <a href="mailto:g.borgestoledo@gmail.com">Email</a>
       </ul>
     </nav>
   </div>
+
 </header>
 
 
-<body class="container">
+<body>
+
+
   <div class="frontpage">
     <div class="info">
-      <h1 style="font-size: 40px;">Olá,</h1>
-      <h1 style="margin-top: -40px;">eu sou Gabriel Borges de Toledo</h1>
-      <p style="margin-top: -20px;">Desenvolvedor Web Front-end</p>
+      <h1 style="font-size: 40px; text-align: left;">Olá,</h1>
+      <h1 style="margin-top: -40px;">bem vindo ao meu portifólio</h1>
 
       <button class="animated-button" href="#sobremim">
         <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +47,7 @@
             d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
           </path>
         </svg>
-        <span class="text">Sobre Mim</span>
+        <a class="text" href="#sobremim">Sobre mim</a>
         <span class="circle"></span>
         <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -60,32 +58,68 @@
     </div>
 
     <div class="photo">
-    </div>
-  </div>
-  <div class="sections">
-    <section id="sobremim">
-      <h2>Sobre mim</h2>
-      <div class="about">
-        <p>Sou um desenvolvedor web focado em criar experiências digitais
-          incríveis. Tenho experiência em HTML, CSS e JavaScript, e estou sempre aprendendo novas tecnologias para
-          aprimorar minhas habilidades.
-          Estou sempre em busca de novos desafios e oportunidades para crescer como desenvolvedor. Se você está
-          procurando
-          alguém para ajudar em seu próximo projeto, não hesite em entrar em contato!</p>
-      </div>
-    </section>
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <div class="projects">
-        <div class="sama">
-          <h3>Projeto Sama</h3>
-          <p>Descrição do projeto 1. Este projeto foi desenvolvido usando HTML, CSS e JavaScript.</p>
 
+      <div class="card-client">
+        <div class="user-picture">
+          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z">
+            </path>
+          </svg>
+        </div>
+        <p class="name-client"> Gabriel Borges de Toledo</p>
+          <span>Desenvolvedor Web
+          </span>
+        </p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/ga.br.iel_borges/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+              </path>
+            </svg>
+            <span class="tooltip-social">Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-borges-de-toledo-b922a433b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path
+                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+              </path>
+            </svg>
+            <span class="tooltip-social">LinkedIn</span>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <section id="sobremim">
+    <h1>Sobre mim</h1>
+    <div class="about">
+      <p>Sou um desenvolvedor focado em criar experiências digitais impactantes e estou focado em alcançar meus
+        objetivos como empreendedor na área de tecnologia. Com experiência em HTML, CSS, Python e JavaScript, estou
+        sempre em busca de aprender novas ferramentas e tendências para aprimorar minhas habilidades. Tenho um espírito
+        inovador e uma visão empreendedora, buscando transformar ideias em soluções que façam a diferença. Se você
+        procura um profissional dedicado e motivado para colaborar em projetos desafiadores.
+        <a href="mailto:g.borgestoledo@gmail.com" style="text-decoration: solid; color:greenyellow;"> Entre em contato
+          através do meu Email.</a>
+      </p>
+      <p> Esse portifólio tem o objetivo de mostrar o meu progresso e a evolução das minhas habilidades de programação e
+        demonstrar algumas das minhas habilidades de Front-End </p>
+    </div>
+  </section>
 
-    <section id="skills">
+
+
+  <section id="curriculo">
+    <h1>Currículo</h1>
+    <div class="curriculo">
+
+      <h2> Formação:</h2>
+      <h3>Ensino Médio</h3>
+      <p> Alceu Maynard Araujo Professor | Ensino Médio</p>
+      <h3>Cursando</h3>
+      <p>Faculdade de Tecnologia do Estado de São Paulo (FATEC) | Análise e Desenvolvimento de Sistemas</p>
+
       <h2>Skills</h2>
       <div class="skills">
         <ul>
@@ -99,32 +133,43 @@
           <i class="devicon-git-plain-wordmark colored"></i></i>
         </ul>
       </div>
-    </section>
 
-    <section id="curriculo">
-      <h2>Currículo</h2>
-      <div class="curriculo">
-        <h3>Sinta-se à vontade para baixar o meu currículo</h2>
-          <div style="display: flex; justify-content: center; align-items: center;">
-            <button class="animated-button">
-              <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                </path>
-              </svg>
-              <span class="text" download>Baixe meu Currículo</span>
-              <span class="circle"></span>
-              <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
-                </path>
-              </svg>
-            </button>
-          </div>
+      <h4>Sinta-se à vontade para <a href="./documents/Currículo p Informática .pdf" download="Currículo Gabriel Borges"
+          style="text-decoration: solid; color:greenyellow;">baixar o meu currículo</a>
+      </h4>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h1>Projetos</h1>
+    <div class="projects">
+      <div class="sama">
+        <h2>Projeto Sama</h2>
+
+        <img src="./images/mvp2.gif" alt="SAMA" />
+
+        <p>Esse projeto foi desenvolvido por mim e pela minha equipe de projetos integrados ".Tec".
+          O projeto consiste em um sistema de gerenciamento de atestados e equipes, onde o usuário pode enviar
+          atestados, editar editar e gerenciar equipes.
+          O sistema foi desenvolvido utilizando HTML, CSS, JavaScript e Python com o framework Flask.
+          <a href="https://github.com/Equipe-DotTec/SAMA-API" target="_blank"
+            style="text-decoration: solid; color:greenyellow;">Veja o repositório no GitHub.</a>
+        </p>
+        <h3 style="margin-top: 50px;">Desafios Enfrentados</h3>
+        <p>Participei do desenvolvimento do projeto Sama como desenvolvedor front-end, sendo meu primeiro contato
+          prático com HTML. Enfrentei desafios como estruturação semântica, integração com CSS e aplicação de boas
+          práticas, que superei por meio de pesquisas, tutoriais e fóruns técnicos. O projeto foi fundamental para meu
+          desenvolvimento profissional, permitindo que eu entregasse uma interface funcional e consolidasse
+          conhecimentos essenciais em front-end.</p>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+
+
 </body>
+
+
 <footer>
   <div class="footer_info">
     <h2 style="margin-top: -30px;">Entre em contato</h2>
