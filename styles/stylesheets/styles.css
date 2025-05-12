@@ -57,8 +57,8 @@ header {
 .frontpage {
   justify-content: center;
   display: flex;
-  padding-bottom: 45vh;
-  padding-top: 30vh;
+  padding-bottom: 37vh;
+  padding-top: 37vh;
   padding-left: 30vh;
   padding-right: vh;
 }
@@ -115,8 +115,6 @@ section{
   text-align: center;
 }
 
-section h2 {
-}
 
 .dark.mode {
   background-color: #1e1e1e;
