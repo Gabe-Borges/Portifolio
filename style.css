@@ -237,6 +237,10 @@ section {
 
 }
 
+.softskills {
+  padding-top: 1.5rem;
+}
+
 .softskills li {
   font-weight: 300;
   font-size: 1.2rem;
@@ -244,6 +248,11 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0rem 0.5rem;
+}
+
+.idiomas {
+  padding-top: 5rem;
 }
 
 .idiomas li {
@@ -253,6 +262,11 @@ section {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 0rem 0.5rem;
+}
+
+.certificacoes {
+  padding-top: 10vh;
 }
 
 .projects {
@@ -642,6 +656,7 @@ ul {
   box-sizing: border-box;
   margin: 10px auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  text-align: center;
 }
 
 .card-client h2 {
