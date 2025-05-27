@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="./styles/stylesheets/styles.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +59,7 @@
 
     <div class="photo">
 
-      <div class="card-client">
+      <div class="card-frontpage">
         <div class="user-picture">
           <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -79,7 +79,8 @@
             </svg>
             <span class="tooltip-social">Instagram</span>
           </a>
-          <a href="https://www.linkedin.com/in/gabriel-borges-de-toledo-b922a433b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <a
+            href="https://www.linkedin.com/in/gabriel-borges-de-toledo-b922a433b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
@@ -91,7 +92,7 @@
       </div>
     </div>
   </div>
-  <section id="sobremim">
+  <section class="aboutme" id="sobremim">
     <h1>Sobre mim</h1>
     <div class="about">
       <p>Sou um desenvolvedor focado em criar experiências digitais impactantes e estou focado em alcançar meus
@@ -108,98 +109,115 @@
   </section>
 
 
-
   <section id="curriculo">
-    <h1>Currículo</h1>
-    <div class="curriculo">
+    <div class="container-fluid">
 
-      <h2> Formação:</h2>
-      <h3>Ensino Médio</h3>
-      <p> Alceu Maynard Araujo Professor | Ensino Médio</p>
-      <h3>Cursando</h3>
-      <p>Faculdade de Tecnologia do Estado de São Paulo (FATEC) | Análise e Desenvolvimento de Sistemas</p>
+      <h1>Currículo</h1>
+      <div class="row">
 
-      <h2>Hard Skills</h2>
-      <div class="skills">
-        <ul>
-          <i class="devicon-html5-plain-wordmark colored"></i>
-          <i class="devicon-css3-plain-wordmark colored"></i>
-          <i class="devicon-python-plain-wordmark colored"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored"></i>
-          <i class="devicon-javascript-plain colored"></i>
-          <i class="devicon-vscode-plain-wordmark colored"></i>
-          <i class="devicon-github-original-wordmark"></i>
-          <i class="devicon-git-plain-wordmark colored"></i></i>
-        </ul>
-      </div>
+        <h2>Formação:</h2>
+        <h3>Ensino Médio</h3>
+        <p>Alceu Maynard Araujo Professor | Ensino Médio</p>
+        <h3>Cursando</h3>
+        <p>Faculdade de Tecnologia do Estado de São Paulo (FATEC) | Análise e Desenvolvimento de Sistemas</p>
 
-      <h2>Soft Skills</h2>
-      <div class="softskills">
-          <li>Trabalho em equipe</li>
-          <li>Comunicação</li>
-          <li>Visão crítica</li>
-          <li>Empreendedorismo</li>
-          <li>Adaptabilidade</li>
-          <li>Autodidata</li>
-          <li>Trabalho sob pressão</li>
-          <li>Capacidade de resolução de problemas</li>
-      </div>
+        <div class="grid-auto cols-curriculo" style="padding-top: 50px;">
+          <div class="col card-client">
+            <h2>Hard Skills</h2>
+            <div class="skills" style="display: flex; flex-wrap: wrap; gap: 16px; align-items: center;">
+              <i class="devicon-html5-plain-wordmark colored"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-python-plain-wordmark colored"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-vscode-plain-wordmark colored"></i>
+              <i class="devicon-github-original-wordmark"></i>
+              <i class="devicon-git-plain-wordmark colored"></i>
+            </div>
+          </div>
 
-      <h2>Idiomas</h2>
-      <div class="idiomas">
-          <li>Português - Nativo</li>
-          <li>Inglês - Avançado</li>
-          <li>Alemão - Básico</li>
-      </div>
+          <div class="col card-client">
+            <h2>Soft Skills</h2>
+            <div class="softskills">
+              <li>Trabalho em equipe</li>
+              <li>Comunicação</li>
+              <li>Visão crítica</li>
+              <li>Empreendedorismo</li>
+              <li>Adaptabilidade</li>
+              <li>Autodidata</li>
+              <li>Trabalho sob pressão</li>
+              <li>Capacidade de resolução de problemas</li>
+            </div>
+          </div>
 
-      <h2>Certificações</h2>
-        <h3>Certificado do Curso online de Git</h2>
-        <h3>Certificado do Curso online de TI Cisco</h2>
+          <div class="col card-client">
+            <h2>Idiomas</h2>
+            <div class="idiomas">
+              <li>Português - Nativo</li>
+              <li>Inglês - Avançado</li>
+              <li>Alemão - Básico</li>
+              <li>Espanhol - Básico</li>
+            </div>
+          </div>
 
-      <h4>Sinta-se à vontade para baixar o <a href="./documents/Currículo p Informática .pdf" target="_blank" 
-          style="text-decoration: solid; color:greenyellow;">meu currículo</a>
-      </h4>
-    </div>
-  </section>
+          <div class="col card-client">
+            <h2>Certificações</h2>
+            <h3>Certificado do Curso online de Git</h3>
+            <h3>Certificado do Curso online de TI Cisco</h3>
+          </div>
+        </div>
 
-  <section id="projetos">
-    <h1>Projetos</h1>
-    <div class="projects">
-      <div class="sama">
-        <h2>Projeto Sama</h2>
-
-        <p>O projeto Sama foi desenvolvido por mim e pela minha equipe de projetos integrados ".Tec".
-          O projeto consiste em um sistema de gerenciamento de atestados e equipes, onde o usuário pode enviar
-          atestados, editar editar e gerenciar equipes.
-          O sistema foi desenvolvido utilizando HTML, CSS, JavaScript e Python com o framework Flask.
-          <a href="https://github.com/Equipe-DotTec/SAMA-API" target="_blank"
-            style="text-decoration: solid; color:greenyellow;">Veja o repositório no GitHub.</a>
-        </p>
-
-        <p>O projeto foi desenvolvido em equipe, onde cada membro teve um papel importante na construção do sistema.</p>
-
-        <h3 style="margin-top: 50px;">Minhas Contribuições</h3>
-        <p>Eu fui responsável pelo desenvolvimento do front-end, onde utilizei HTML, CSS e JavaScript para criar uma
-          interface amigável e intuitiva para o usuário..</p>
-
-        <h3 style="margin-top: 50px;">Desafios Enfrentados</h3>
-        <p>Participei do desenvolvimento do projeto Sama como desenvolvedor front-end, sendo meu primeiro contato
-          prático com HTML. Enfrentei desafios como estruturação semântica, integração com CSS e aplicação de boas
-          práticas, que superei por meio de pesquisas, tutoriais e fóruns técnicos. O projeto foi fundamental para meu
-          desenvolvimento profissional, permitindo que eu entregasse uma interface funcional e consolidasse
-          conhecimentos essenciais em front-end.</p>
+        <h4>
+          Sinta-se à vontade para baixar o
+          <a href="./documents/Currículo.pdf" target="_blank"
+            style="text-decoration: solid; color:greenyellow;">
+            meu currículo
+          </a>
+        </h4>
       </div>
     </div>
   </section>
 
+<section class="projects" id="projetos">
+  <h1>Projetos</h1>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h2>Projeto Sama</h2>
+      <p>O projeto Sama foi desenvolvido por mim e pela minha equipe de projetos integrados ".Tec".
+        O projeto consiste em um sistema de gerenciamento de atestados e equipes, onde o usuário pode enviar
+        atestados, editar editar e gerenciar equipes.
+        O sistema foi desenvolvido utilizando HTML, CSS, JavaScript e Python com o framework Flask.
+        <a href="https://github.com/Equipe-DotTec/SAMA-API" target="_blank" style="text-decoration: solid; color:greenyellow;">
+          Veja o repositório no GitHub.
+        </a>
+      </p>
+      <h3 style="margin-top: 20px;">Minhas Contribuições</h3>
+      <p>Desenvolvi o front-end com HTML, CSS e JavaScript, criando uma interface amigável e intuitiva.</p>
+      <h3 style="margin-top: 20px;">Desafios Enfrentados</h3>
+      <p>Foi meu primeiro contato prático com HTML e CSS. Enfrentei dificuldades com semântica e estilização, que superei com pesquisa e prática.</p>
+    </div>
 
+    <div class="project-card">
+      <h2>Projeto Portfólio</h2>
+      <p>Este próprio portfólio é um projeto pessoal que desenvolvi para mostrar minhas habilidades em desenvolvimento web.
+        Ele foi feito utilizando HTML, CSS e JavaScript, com foco na responsividade e animações suaves.
+      </p>
+      <h3 style="margin-top: 20px;">Funcionalidades</h3>
+      <p>Design responsivo, navegação por âncoras, interação com SVGs e ícones de redes sociais.</p>
+      <a href="https://github.com/Gabe-Borges" target="_blank" style="text-decoration: solid; color:greenyellow;">
+        Veja mais no meu GitHub.
+      </a>
+    </div>
+  </div>
+</section>
 
 </body>
 
 
 <footer>
   <div class="footer_info">
-    <h2 style="margin-top: -30px;">Entre em contato</h2>
+    <h2 style="margin-top: -30px; font-size: 2.5rem;">Entre em contato</h2>
+    Email: <a style="color:greenyellow" href="mailto:g.borgestoledo@gmail.com">g.borgestoledo@gmail.com</a>
     <p>Você pode me encontrar nas redes sociais:</p>
   </div>
   <div class="footer_social">
