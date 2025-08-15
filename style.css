@@ -157,8 +157,8 @@ body {
   background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
   background-size: 30px 30px;
   background-position: -5px -5px;
-  color: light-dark(black, white);
-  background-color: light-dark(#efedea, #1e1e1e);
+  color: white;
+  background-color: #1e1e1e;
   font-family: "Jost", sans-serif;
   scroll-behavior: smooth;
   font-size: 2vh;
