@@ -4,13 +4,13 @@ Bem-vindo ao meu portfólio! Aqui você encontrará um pouco sobre minha trajet�
 
 ---
 
-## 🤔 Sobre o Projeto
+## Sobre o Projeto
 
 Este portfólio foi desenvolvido com o objetivo de centralizar informações importantes sobre minha vida acadêmica e profissional. Ele é uma forma prática de apresentar minhas habilidades e projetos de maneira visual e organizada.
 
 ---
 
-## 🧑‍💻 Sobre Mim
+## Sobre Mim
 
 Olá! Meu nome é Gabriel, e sou um desenvolvedor web iniciante. Adoro transformar ideias em soluções digitais criativas e funcionais. Tenho experiência em HTML, CSS e Python, e estou sempre em busca de aprender novas tecnologias para aprimorar minhas habilidades.
 
@@ -18,7 +18,7 @@ Quando não estou codando, você pode me encontrar explorando novas ferramentas,
 
 ---
 
-## 🎯 Objetivos Principais
+## Objetivos Principais
 
 - Facilitar a visualização das minhas experiências e projetos.
 - Centralizar todas as informações em um único lugar acessível.
@@ -26,7 +26,7 @@ Quando não estou codando, você pode me encontrar explorando novas ferramentas,
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica e moderna para a web.
 - **CSS3**: Estilização e design responsivo.
@@ -34,7 +34,7 @@ Quando não estou codando, você pode me encontrar explorando novas ferramentas,
 
 ---
 
-## 🚀 Ferramentas e Recursos
+## Ferramentas e Recursos
 
 - **Visual Studio Code**: Editor de código poderoso e flexível, com suporte a extensões.
 - **GitHub Pages**: Plataforma para hospedar e compartilhar este portfólio de forma gratuita e eficiente.
